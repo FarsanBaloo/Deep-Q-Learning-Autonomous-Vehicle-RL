@@ -1,6 +1,8 @@
 from pathlib import Path
 import gymnasium as gym
 
+# Wrap environment to record videos of episodes played by the agent during evaluation phase of testing
+
 def record_videos(env, video_folder="videos", name_prefix="rl-video"):
     video_folder = Path(video_folder)
     video_folder.mkdir(parents=True, exist_ok=True)
